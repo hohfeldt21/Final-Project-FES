@@ -1,0 +1,37 @@
+#rows {
+  padding-left: 10px;
+}
+
+img {
+  border-style: none;
+}
+
+.row__wrapper {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0;
+  padding: 0;
+}
+.row__title {
+  padding-top: 30px;
+  padding-left: 20px;
+  padding-bottom: 10px;
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.row__title h2 {
+  color: white;
+}
+
+.carousel {
+  display: flex;
+  overflow-y: hidden;
+  overflow-x: scroll;
+}
+
+.carousel::-webkit-scrollbar {
+  display: none;
+}
