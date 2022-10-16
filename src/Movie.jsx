@@ -1,5 +1,4 @@
 import React, { useEffect, useState, useRef } from "react";
-import { Link } from "react-router-dom";
 import "./Movie.css";
 import IMDB from "./assets/imdb.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
