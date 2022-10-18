@@ -1,0 +1,133 @@
+.arrowBack__Icon {
+  cursor: pointer;
+  color: white;
+  margin: 0 auto;
+  width: 1000px;
+  position: relative;
+  top: 80px;
+  left: 12px;
+  font-size: 28px;
+}
+
+.movieInfo__container {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (max-width: 600px) {
+  .movieInfo__container {
+    height: 1200px;
+  }
+  .movieInfo__wrapper {
+    height: 1000px;
+  }
+  .movieInfo__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .movieInfo__poster {
+    height: 300px;
+    width: 250px;
+    margin-left: 20px;
+  }
+}
+
+.movieInfo__wrapper {
+  height: 800px;
+  max-width: 1000px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 20px;
+}
+.movieInfo__poster {
+  height: 500px;
+  width: 450px;
+  border-radius: 20px;
+  object-fit: fill;
+  /* padding: 0 48px; */
+}
+
+.movieInfo__data {
+  color: white;
+  margin-left: 40px;
+  font-weight: 400;
+  text-align: center;
+  width: 100%;
+}
+
+.movieInfo__data--para {
+  padding: 8px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+p {
+  margin: 8px 0;
+  font-size: 20px;
+}
+
+.movieInfo__data--descriptors {
+  font-weight: bold;
+  color: lightskyblue;
+}
+
+.movieInfo__data--plot {
+  padding: 12px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.suggested__row {
+  width: 100%;
+  max-width: 1000px;
+  height: 400px;
+}
+
+.suggested__title {
+  text-align: center;
+  color: white;
+  font-size: 24px;
+  padding-bottom: 50px;
+}
+
+.movie__row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow-x: scroll;
+}
+
+.movie__item--skeleton {
+  margin: 0 auto;
+  background-color: lightgrey;
+  height: 300px;
+  width: 200px;
+  border-radius: 20px;
+  background: linear-gradient(
+      to right,
+      rgba(255, 255, 255, 0),
+      rgba(255, 255, 255, 0.5) 50%,
+      rgba(255, 255, 255, 0) 80%
+    ),
+    lightgray;
+  background-repeat: repeat-y;
+  background-size: 50px 200px;
+  background-position: 0 0;
+  animation: shine 1s infinite;
+}
+
+@keyframes shine {
+  to {
+    background-position: 100% 0, /* move highlight to right */ 0 0;
+  }
+}
