@@ -4,10 +4,9 @@ import "./Row.css";
 import axios from "axios";
 import Movie from "./Movie";
 
-const baseUrl = "https://image.tmdb.org/t/p/original/";
-
 const Row = ({ fetchUrl, title }) => {
   const [movies, setMovies] = useState([]);
+  const [loading, setLoading] = useState("false");
 
   useEffect(() => {
     async function fetchData() {
@@ -16,7 +15,7 @@ const Row = ({ fetchUrl, title }) => {
       return request;
     }
     fetchData();
-    console.log(fetchData());
+    setLoading(false);
   }, [fetchUrl]);
 
   return (
@@ -30,9 +29,21 @@ const Row = ({ fetchUrl, title }) => {
         </div>
         <div className="row__movies">
           <div className="carousel">
-            {movies.map((movie) => (
-              <Movie movie={movie} key={movie.id} />
-            ))}
+            {!loading ? (
+              <>
+                {movies.map((movie) => (
+                  <Movie movie={movie} key={movie.id} />
+                ))}
+              </>
+            ) : (
+              new Array(12).fill(0).map((_, index) => (
+                <div className="home__movie" key={index}>
+                  <div className="c">
+                    <div className="cover--skeleton"></div>
+                  </div>
+                </div>
+              ))
+            )}
           </div>
         </div>
       </div>

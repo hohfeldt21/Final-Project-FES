@@ -1,0 +1,37 @@
+ul {
+  list-style-type: none;
+}
+
+.footer {
+  width: 100%;
+}
+
+.footer__links {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+li {
+  color: grey;
+  cursor: pointer;
+  position: relative;
+}
+
+li:hover {
+  color: white;
+}
+
+.footer__title {
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 20px;
+}
+
+.solid {
+  margin-top: 20px;
+  content: "";
+  border-top: 2px solid #454545;
+}

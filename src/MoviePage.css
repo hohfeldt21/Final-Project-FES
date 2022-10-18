@@ -131,3 +131,166 @@ p {
     background-position: 100% 0, /* move highlight to right */ 0 0;
   }
 }
+
+/* Movie Skeleton */
+
+.movie__title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.movie__title--skeleton {
+  margin-top: 20px;
+  width: 180px;
+  height: 16px;
+  background-color: lightgray;
+  background: linear-gradient(
+      to right,
+      rgba(255, 255, 255, 0),
+      rgba(255, 255, 255, 0.5) 50%,
+      rgba(255, 255, 255, 0) 80%
+    ),
+    lightgray;
+  background-repeat: repeat-y;
+  background-size: 50px 200px;
+  background-position: 0 0;
+  animation: shine 1s infinite;
+}
+
+.movie__body {
+  padding: 0 8px;
+}
+
+.movie__body--skeleton {
+  width: 285px;
+  height: 420px;
+  background-color: lightgray;
+  background: linear-gradient(
+      to right,
+      rgba(255, 255, 255, 0),
+      rgba(255, 255, 255, 0.5) 50%,
+      rgba(255, 255, 255, 0) 80%
+    ),
+    lightgray;
+  background-repeat: repeat-y;
+  background-size: 50px 200px;
+  background-position: 0 0;
+  animation: shine 1s infinite;
+}
+
+/* MovieInfo Skeleton */
+
+.movieInfo__title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-left: 40px;
+  margin-top: 8px;
+}
+
+.movieInfo__title--skeleton {
+  margin-top: 20px;
+  width: 540px;
+  height: 20px;
+  background-color: lightgray;
+  background: linear-gradient(
+      to right,
+      rgba(255, 255, 255, 0),
+      rgba(255, 255, 255, 0.5) 50%,
+      rgba(255, 255, 255, 0) 80%
+    ),
+    lightgray;
+  background-repeat: repeat-y;
+  background-size: 50px 200px;
+  background-position: 0 0;
+  animation: shine 1s infinite;
+}
+
+.movieInfo__body {
+  padding: 0 8px;
+}
+
+.movieInfo__body--skeleton {
+  background-color: lightgray;
+  height: 500px;
+  width: 400px;
+  background: linear-gradient(
+      to right,
+      rgba(255, 255, 255, 0),
+      rgba(255, 255, 255, 0.5) 50%,
+      rgba(255, 255, 255, 0) 80%
+    ),
+    lightgray;
+  background-repeat: repeat-y;
+  background-size: 50px 200px;
+  background-position: 0 0;
+  animation: shine 1s infinite;
+}
+
+.movieInfo__data--paraskeleton {
+  background-color: lightgray;
+  background: linear-gradient(
+      to right,
+      rgba(255, 255, 255, 0),
+      rgba(255, 255, 255, 0.5) 50%,
+      rgba(255, 255, 255, 0) 80%
+    ),
+    lightgray;
+  background-repeat: repeat-y;
+  background-size: 50px 200px;
+  background-position: 0 0;
+  animation: shine 1s infinite;
+}
+
+/* MovieInfo Title and Description Skeleton */
+
+.movieInfo__title--top,
+.movieInfo__title--bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-left: 40px;
+  margin-top: 8px;
+}
+
+.movieInfo__title--skeleton--top {
+  margin-top: 20px;
+  width: 540px;
+  height: 72px;
+  background-color: lightgray;
+  margin-bottom: 24px;
+  background: linear-gradient(
+      to right,
+      rgba(255, 255, 255, 0),
+      rgba(255, 255, 255, 0.5) 50%,
+      rgba(255, 255, 255, 0) 80%
+    ),
+    lightgray;
+  background-repeat: repeat-y;
+  background-size: 50px 200px;
+  background-position: 0 0;
+  animation: shine 1s infinite;
+}
+
+.movieInfo__title--skeleton--bottom {
+  margin-top: 20px;
+  width: 540px;
+  height: 50px;
+  background-color: lightgray;
+  margin-top: 24px;
+  padding-top: 12px;
+  background: linear-gradient(
+      to right,
+      rgba(255, 255, 255, 0),
+      rgba(255, 255, 255, 0.5) 50%,
+      rgba(255, 255, 255, 0) 80%
+    ),
+    lightgray;
+  background-repeat: repeat-y;
+  background-size: 50px 200px;
+  background-position: 0 0;
+  animation: shine 1s infinite;
+}

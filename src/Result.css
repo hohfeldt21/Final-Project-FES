@@ -1,0 +1,25 @@
+.movie1 {
+  max-width: calc(100% / 3);
+  padding: 20px;
+  cursor: pointer;
+}
+
+.movie:hover .movie__title {
+  text-decoration: underline;
+}
+
+.movie__img--wrapper:hover {
+  transform: scale(1.05);
+  transition: all 300ms ease-in-out;
+}
+
+.movie__title {
+  text-align: center;
+  font-size: 16px;
+  margin-top: 20px;
+  color: white;
+}
+
+.movie__img {
+  border-radius: 20px;
+}

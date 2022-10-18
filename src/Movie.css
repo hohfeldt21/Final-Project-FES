@@ -1,7 +1,13 @@
+a {
+  cursor: pointer;
+}
 .movie {
   position: relative;
 }
 .movie__info {
+  position: absolute;
+  top: 200px;
+  left: 40px;
   max-width: 500px;
   display: flex;
   flex-direction: row;
@@ -34,7 +40,7 @@
 }
 
 .movie__buttons {
-  right: -100px;
+  padding-left: 60px;
 }
 
 .watch__now {
@@ -54,7 +60,7 @@
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
   border: 1px solid rgba(255, 255, 255, 0.25);
-  margin-left: 20px;
+  margin-left: 10px;
   width: 45px;
   height: 45px;
   border-style: none;
@@ -63,9 +69,26 @@
   color: white;
 }
 
-.cover-skeleton {
-  background-color: grey;
-  color: grey;
+.cover__skeleton {
+  width: 550px;
+  max-height: 320px;
+  background-color: lightgrey;
+  background: linear-gradient(
+      to right,
+      rgba(255, 255, 255, 0),
+      rgba(255, 255, 255, 0.5) 50%,
+      rgba(255, 255, 255, 0) 80%
+    ),
+    lightgray;
+  background-repeat: repeat-y;
+  background-size: 50px 200px;
+  background-position: 0 0;
+  animation: shine 1s infinite;
+}
+@keyframes shine {
+  to {
+    background-position: 100% 0, /* move highlight to right */ 0 0;
+  }
 }
 
 .cover {

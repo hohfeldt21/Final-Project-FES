@@ -9,9 +9,18 @@ import {
   faChevronDown,
   faChevronRight,
   faPlus,
+  faMagnifyingGlass,
+  faArrowLeft,
 } from "@fortawesome/free-solid-svg-icons";
 
-library.add(faBell, faChevronDown, faChevronRight, faPlus);
+library.add(
+  faBell,
+  faChevronDown,
+  faChevronRight,
+  faPlus,
+  faMagnifyingGlass,
+  faArrowLeft
+);
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
