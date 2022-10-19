@@ -12,6 +12,12 @@ const SearchResults = () => {
   const navigate = useNavigate();
   const [loading, setLoading] = useState("false");
 
+  //function filterMovies(filter) {
+  // if (filter < +5) {
+  //   setMovies(movies.sort((a, b) => b.Year - a.Year));
+  // }
+  //}
+
   function onSearch() {
     setLoading(true);
     setTimeout(() => {
@@ -66,6 +72,15 @@ const SearchResults = () => {
             <h2 className="search__text">
               Search results for: {searchInput || params.searchInput}
             </h2>
+            <input
+              id="filter"
+              type="range"
+              min={0}
+              max={10}
+              //onChange={(event) => filterMovies(event.target.value)}
+              name="rates"
+            />
+            <label htmlFor="rates">Newest</label>
             <div className="movies">
               {!loading
                 ? movies.Search?.map((movie) => (

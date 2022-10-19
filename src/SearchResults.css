@@ -3,6 +3,15 @@
   align-items: center;
   justify-content: center;
 }
+input {
+  margin: 10px;
+  margin-left: 50px;
+}
+
+label {
+  color: white;
+  padding-left: 5px;
+}
 
 @keyframes shine {
   to {

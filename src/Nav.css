@@ -70,3 +70,37 @@ li {
   content: "";
   border-top: 2px solid #454545;
 }
+
+@media (max-width: 600px) {
+  .nav__item:not(:last-child) {
+    display: none;
+  }
+  .main__title {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .movies {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+  }
+  .movie__img--wrapper {
+    padding-left: 30px;
+  }
+  .movie__title {
+    padding-left: 180px;
+  }
+  .movie__row {
+    flex-wrap: wrap;
+  }
+  .movie__item--skeleton:nth-child(odd) {
+    display: none;
+  }
+  .movieInfo__poster {
+    width: 95%;
+  }
+  .movieInfo__data {
+    padding-right: 20px;
+  }
+}
